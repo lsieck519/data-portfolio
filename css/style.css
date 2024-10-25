@@ -1,0 +1,256 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lavenderblush;
+    margin: 0px;
+}
+
+  /*HEADER, NAV, HERO*/
+
+.hero {
+    background-color: skyblue;
+    background-image: URL(../assets/images/CoverPhoto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 50vh;
+}
+  
+.hero-text {
+    color: darkslategray;
+    font-size: 40px;
+    font-style: oblique;
+    margin-left: 3.5%;
+    margin-bottom: auto;
+}
+  
+.hero h1 {
+    font-size: 80px;
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+
+.hero p{
+    margin-top: 2%;
+    font-size: .5em;
+}
+.hero nav {
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    padding: 20px;
+    margin-right: 25px;
+}
+  
+.hero nav ul {
+    display: flex;
+    list-style-type: none;
+    width: 30vw;
+    justify-content: space-between;
+    font-size: 2em;
+}
+  
+.hero nav ul li {
+    text-decoration: none;
+}
+  
+
+/*Main content below hero*/
+
+#about {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    margin: 1%;
+}
+  
+#about h2 {
+    font-size: 2.4em;
+    font-family: monospace;
+}
+  
+#about p {
+    margin: auto;
+    font-size: 1.6em;
+    font-weight: 100;
+    text-align: center;
+    padding: 1%;
+}
+  
+.headshot {
+    width: 200px;
+    border-radius: 190px;
+}
+  
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+  
+hr.line {
+    border-top: 5px dashed pink;
+}
+
+/*portfolio section*/
+
+#portfolio {
+    padding: 5px;
+  }
+
+.portfolio-section h2 {
+    font-size: 3em;
+    font-family: monospace;
+}
+  
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10%;
+}
+  
+.portfoliosubtext {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+  
+.portfolio-card {
+    width: 400px;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(197, 195, 195);
+    margin: 15px;
+    background-color: snow;
+}
+  
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+}
+  
+.portfolio-card:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 420px;
+    height: 560px;
+}
+
+.portfolio-image {
+    margin-top: 25px;
+    width: 80%;
+    height: 30%;
+    border-radius: 10px;
+}
+  
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  
+.portfolio-link {
+    text-decoration: none;
+    color: #ef744b;
+}
+  
+a {
+    text-decoration: none;
+    color: white;
+}
+  
+  /*footer/contact*/
+
+footer {
+    background: linear-gradient(lavenderblush, skyblue);
+    color: darkslategray;
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+}
+
+#contact ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#contact ul li {
+    text-decoration: none;
+    font-size: 25px;
+    padding-top: 2%;
+    text-align: center;
+}
+
+#contact ul li:hover{
+    color: brown;
+}
+
+footer button {
+    float: center;
+    padding:2px;
+    font-family: monospace;
+    font-size: 1em;
+    background-color: beige;
+    border-color: beige;
+}
+
+footer h2{
+    text-align: center;
+}
+footer h4 {
+    font-size: 10px;
+    padding-top: 5%;
+}
+
+/*media queries-- removing photo on smaller sceens*/
+
+@media only screen and (max-width: 1300px) {
+
+
+.portfolio-container {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+
+#about p {
+    width: 100vw;
+}
+
+#nav-list {
+    display: flex;
+    flex-direction: column;
+    line-height: 10vh;
+    text-align: right;
+    justify-content: center;
+    background-color: transparent;
+    }
+
+    #top h1 {
+        font-size: 35px;
+    }
+    .hero nav {
+        font-size: 10px;
+    }
+
+    #about {
+        width: 90%;
+        text-align: center;
+    }
+    body {
+        width: 100vw;
+    }
+   
+}
+    
+@media only screen and (max-width: 1000px) {
+    .headshot-container {
+        display: none;
+    }
+
+    #about h2 {
+        display:none;
+    }
+
+}
