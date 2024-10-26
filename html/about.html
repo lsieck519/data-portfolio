@@ -2,41 +2,125 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link
-			rel="stylesheet"
-			href="/css/style.css"
-		/>
+
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>About Me Page</title>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="/css/style.css"
+		/>
 	</head>
+
 	<body>
-		<h1>About Me</h1>
-		<p>
-			Hi, I'm Laura Sieck. I'm an engineer with a passion for coding and data
-			analysis. I have experience working with Python, SQL, and Tableau to
-			create data-driven solutions.
-		</p>
+		<h1><bold>ABOUT ME</bold></h1>
+		<section>
+			<nav
+				class="navbar"
+				role="navigation"
+				aria-label="main navigation"
+			>
+				<div
+					id="navbarBasicExample"
+					class="navbar-menu"
+				>
+					<div class="navbar-start">
+						<a
+							class="navbar-item"
+							href="/index.html"
+						>
+							Home
+						</a>
 
-		<p>Links Below:</p>
-		<ul>
-			<li>placeholder</li>
-			<li>placeholder</li>
-			<li>placeholder</li>
-		</ul>
+						<a
+							class="navbar-item"
+							href="/html/about.html"
+						>
+							About Me
+						</a>
 
-		<p>Timeline of my career</p>
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a class="navbar-link"> Projects </a>
 
-		<certifications>
+							<div class="navbar-dropdown">
+								<a
+									class="navbar-item"
+									href="/html/python.html"
+								>
+									Python
+								</a>
+								<a
+									class="navbar-item"
+									href="/html/sql.html"
+								>
+									SQL
+								</a>
+								<a
+									class="navbar-item"
+									href="/html/tableau.html"
+								>
+									Tableau
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="navbar-end">
+						<div class="navbar-item">
+							<a
+								class="navbar-item"
+								href="contact.html"
+							>
+								Contact Me
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</section>
+
+		<hr />
+
+		<div class="container">
+			<p>
+				Hi, I'm Laura Sieck. I'm an engineer with a passion for coding and data
+				analysis. I have experience working with Python, SQL, and Tableau to
+				create data-driven solutions.
+			</p>
+
+			<p>Links Below:</p>
 			<ul>
 				<li>placeholder</li>
 				<li>placeholder</li>
 				<li>placeholder</li>
 			</ul>
-		</certifications>
+
+			<p>Timeline of my career</p>
+
+			<certifications>
+				<ul>
+					<li>placeholder</li>
+					<li>placeholder</li>
+					<li>placeholder</li>
+				</ul>
+			</certifications>
+		</div>
 
 		<p><a href="portfolio.html">Check out my work</a></p>
+		<footer class="footer">
+			<div class="content has-text-centered">
+				<p>
+					Created and Maintained by Laura Sieck. Licensed
+					<a href="https://opensource.org/license/mit">MIT</a>.
+				</p>
+			</div>
+		</footer>
 	</body>
 </html>
