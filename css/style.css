@@ -10,6 +10,11 @@ body {
 h1 {
 	text-align: center;
 	margin-bottom: 20px;
+	font-size: 2vw;
+}
+
+.top-line {
+	border: 1px solid #ffa5a5;
 }
 
 p {
@@ -27,90 +32,117 @@ a {
 
 a:hover {
 	text-decoration: underline;
-	color:#ffa5a5
+	color: #ffa5a5;
+}
+
+.footer {
+	text-align: center;
+	padding: 1%;
+}
+
+.footer p {
+	font-size: 0.8em;
 }
 
 /* for timeline */
 /* credit to https://devncoffee.com/responsive-timeline-html-css/ */
 /* (PART A) WRAPPER */
-.hOut { overflow-x: auto; }
+.hOut {
+	overflow-x: auto;
+}
 .hIn {
-  display: flex;
-  padding-bottom: 10px; margin-bottom: 20px;
-  border-bottom: 3px dotted #ffa5a5;
-  min-width: fit-content; width: 100%;
+	display: flex;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 3px dotted #ffa5a5;
+	min-width: fit-content;
+	width: 100%;
 }
 
 /* (PART B) EVENTS */
 .hIn .event {
-  color: #222222; background: #CBC3E3;
-  min-width: 200px; max-width: 400px;
-  padding: 10px; margin: 10px; border-radius: 100px;
-  position: relative;
+	color: #222222;
+	background: #cbc3e3;
+	min-width: 200px;
+	max-width: 400px;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 100px;
+	position: relative;
 }
 
-.hIn .eDate { font-family: monospace; font-weight: 500; font-size: 16px; text-align: center;}
-.hIn .eTxt { font-size: 15px; text-align: center;}
+.hIn .eDate {
+	font-family: monospace;
+	font-weight: 500;
+	font-size: 16px;
+	text-align: center;
+}
+.hIn .eTxt {
+	font-size: 15px;
+	text-align: center;
+}
 
 /* (PART C) TIMELINE SHARED */
-.hIn .event::before, .hIn .event::after {
-  position: absolute; content: "";
+.hIn .event::before,
+.hIn .event::after {
+	position: absolute;
+	content: '';
 }
 
 /* (PART D) TIMELINE CIRCLE */
 .hIn .event::before {
-  bottom: -30px; left: 50%;
-  content: ""; width: 12px; height: 12px; border-radius: 50%;
-  background: #ffa5a5;
+	bottom: -30px;
+	left: 50%;
+	content: '';
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #ffa5a5;
 }
 
 /* (PART E) TIMELINE "T-CONNECTOR" */
 .hIn .event::after {
-  bottom: -20px; left: calc(50% + 6px);
-  width: 1px; height: 20px;
-  border-left: 3px dotted #ffa5a5;
+	bottom: -20px;
+	left: calc(50% + 6px);
+	width: 1px;
+	height: 20px;
+	border-left: 3px dotted #ffa5a5;
 }
 
 /*portfolio section*/
 
-.portfolio-section h2 {
-    font-size: 2em;
-}
-  
 .portfolio-section {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-  
-.portfoliosubtext {
-    font-size: .8em;
-    font-weight: 300;
-}
-  
-.portfolio-card {
-    width: 500px;
-    height: 350px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px rgb(197, 195, 195);
-    margin: 15px;
-    background-color: rgb(215, 224, 189);
-}
-  
-.portfolio-container {
-    display: flex;
-    justify-content: space-around;
-}
-  
-.portfolio-card:hover {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    width: 510px;
-    height: 360px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 2%;
 }
 
-.portfolio-image {
-    margin-top: 15px;
-    width: 80%;
-    height: 45%;
-    border-radius: 10px;
+.portfolio-section h2 {
+	font-size: 2vw;
+	padding-top: 2%;
+	font-family: monospace;
+	font-weight: bold;
 }
+
+.portfolio-container {
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 5%;
+}
+
+.portfolio-card {
+	width: 400px;
+	height: 200px;
+	font-size: 1em;
+	padding: 1%;
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px 1px #ffa5a5;
+	background-color: rgb(215, 224, 189);
+}
+
+.portfolio-card:hover {
+	box-shadow: 1px 1px 10px #ffa5a5;
+}
+
+
