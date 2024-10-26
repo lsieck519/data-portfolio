@@ -2,8 +2,9 @@ body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	margin: 20px;
 	line-height: 1.6;
-	background-color: whitesmoke;
+	background-color: white;
 	font-size: 1.2em;
+	align-items: center;
 }
 
 h1 {
@@ -19,11 +20,6 @@ ul {
 	list-style-type: disc;
 	margin-left: 20px;
 }
-
-/* certifications {
-	display: block;
-	margin-bottom: 20px;
-} */
 
 a {
 	color: rgb(2, 66, 66);
@@ -47,14 +43,14 @@ a:hover {
 
 /* (PART B) EVENTS */
 .hIn .event {
-  color: #222222; background: #CBC3E3; border: 2px solid #d68d8d;
-  min-width: 200px; max-width: 300px;
-  padding: 10px; margin: 10px; border-radius: 10px;
+  color: #222222; background: #CBC3E3;
+  min-width: 200px; max-width: 400px;
+  padding: 10px; margin: 10px; border-radius: 100px;
   position: relative;
 }
 
-.hIn .eDate { font-family: monospace; font-weight: 500; font-size: 20px; text-align: center;}
-.hIn .eTxt { font-size: 19px; }
+.hIn .eDate { font-family: monospace; font-weight: 500; font-size: 16px; text-align: center;}
+.hIn .eTxt { font-size: 15px; text-align: center;}
 
 /* (PART C) TIMELINE SHARED */
 .hIn .event::before, .hIn .event::after {
@@ -64,7 +60,7 @@ a:hover {
 /* (PART D) TIMELINE CIRCLE */
 .hIn .event::before {
   bottom: -30px; left: 50%;
-  content: ""; width: 16px; height: 16px; border-radius: 50%;
+  content: ""; width: 12px; height: 12px; border-radius: 50%;
   background: #ffa5a5;
 }
 
@@ -75,3 +71,46 @@ a:hover {
   border-left: 3px dotted #ffa5a5;
 }
 
+/*portfolio section*/
+
+.portfolio-section h2 {
+    font-size: 2em;
+}
+  
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+  
+.portfoliosubtext {
+    font-size: .8em;
+    font-weight: 300;
+}
+  
+.portfolio-card {
+    width: 500px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(197, 195, 195);
+    margin: 15px;
+    background-color: rgb(215, 224, 189);
+}
+  
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+}
+  
+.portfolio-card:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 510px;
+    height: 360px;
+}
+
+.portfolio-image {
+    margin-top: 15px;
+    width: 80%;
+    height: 45%;
+    border-radius: 10px;
+}
