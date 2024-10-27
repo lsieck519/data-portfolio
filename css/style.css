@@ -111,6 +111,10 @@ a:hover {
 
 /*portfolio section*/
 
+#portfolio {
+	padding: 5px;
+}
+
 .portfolio-section {
 	display: flex;
 	flex-direction: column;
@@ -131,10 +135,11 @@ a:hover {
 }
 
 .portfolio-card {
-	width: 400px;
-	height: 200px;
+	width: 20em;
+	height: 10em;
 	font-size: 1em;
 	padding: 1%;
+	margin: 2%;
 	border-radius: 5px;
 	box-shadow: 0px 0px 4px 1px #ffa5a5;
 	background-color: rgb(215, 224, 189);
@@ -144,4 +149,19 @@ a:hover {
 	box-shadow: 1px 1px 10px #ffa5a5;
 }
 
+@media only screen and (max-width: 1300px) {
+	.portfolio-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
 
+@media only screen and (max-width: 1000px) {
+	.headshot-container {
+		display: none;
+	}
+
+	#about h2 {
+		display: none;
+	}
+}
