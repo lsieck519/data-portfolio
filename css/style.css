@@ -44,6 +44,10 @@ a:hover {
 	font-size: 0.8em;
 }
 
+.material-icons {
+	font-size: 2em;
+}
+
 /* for timeline */
 /* credit to https://devncoffee.com/responsive-timeline-html-css/ */
 /* (PART A) WRAPPER */
