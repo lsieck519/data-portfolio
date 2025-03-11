@@ -97,7 +97,7 @@ a:hover {
 /* (PART D) TIMELINE CIRCLE */
 .hIn .event::before {
 	bottom: -30px;
-	left:50%;
+	left: 50%;
 	content: '';
 	width: 13px;
 	height: 13px;
@@ -159,10 +159,14 @@ a:hover {
 	box-shadow: 1px 1px 10px #ffa5a5;
 }
 
+.p-image {
+	width: 1800px;
+	/* height: 800px; */
+}
+
 @media only screen and (max-width: 1300px) {
 	.portfolio-container {
 		display: flex;
 		flex-wrap: wrap;
 	}
 }
-
